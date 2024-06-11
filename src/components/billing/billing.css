@@ -1,0 +1,105 @@
+.billing {
+    padding-top: 40px;
+    background-color: var(--main-bg);
+    position: relative;
+    z-index: 0
+}
+.billing::before {
+    content: "";
+    display: block;
+    width: 1060px;
+    height: 871px;
+
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+
+    position: absolute;
+    top: -80px;
+    left: -530px;
+    filter: blur(123px);
+    z-index: 1;
+}
+.billing::after {
+    content: "";
+    display: block;
+    width: 345px;
+    height: 514px;
+    background: linear-gradient(220deg, rgba(244, 196, 243, 0.6), rgba(252, 103, 250, 0.4));
+    filter: blur(256px);
+
+    position: absolute;
+    bottom: -100px;
+    left: -285px;
+    z-index: 1;
+}
+.billing-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px 170px;
+    position: relative;
+    z-index: 2;
+}
+.billing-img {
+}
+.billing-img img {
+    max-width: 100%;
+    height: auto;
+}
+.billing-body {
+}
+.billing-body-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.billing-body-text {
+    margin-top: 24px;
+    font-size: 1.13rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+.billing-body-buttons {
+    margin-top: 48px;
+
+    display: flex;
+    gap: 42px;
+    flex-wrap: wrap;
+}
+.billing-body-buttons-btn {
+    padding: 6px 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 0 12px;
+    align-items: center;
+
+    cursor: pointer;
+    background-color: #000;
+    border: none;
+}
+.billing-body-buttons-btn-body {
+    flex: 1 1 auto;
+    text-align: start;
+}
+.billing-body-buttons-btn-body-upper {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    position: relative;
+    right: 2px;
+
+}
+@media(min-width: 1200px) {
+    .billing {
+        padding-top: 160px;
+    }
+    .billing-container {
+        flex-direction: row;
+    }
+    .billing-img {
+        flex: 1 1 530px;
+
+    }
+    .billing-body {
+        flex: 1 1 470px;
+
+    }
+}

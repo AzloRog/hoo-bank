@@ -1,0 +1,12 @@
+.companies {
+    padding-top: 40px;
+}
+@media (min-width: 768px) {
+    .companies {
+        padding-top: 100px;
+    }
+    .companies-container {
+        padding: 0 52px;
+    }
+    
+}
