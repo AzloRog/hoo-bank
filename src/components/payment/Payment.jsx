@@ -1,7 +1,6 @@
 import "./payment.css";
 import Discount from "./public/Discount.svg";
 import Arrow from "./public/Arrow.png";
-import Hand from "./public/Hand.png";
 
 const Payment = () => {
   return (
